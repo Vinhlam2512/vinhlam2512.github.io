@@ -4,6 +4,7 @@
     --black-color: black;
     --text-color: #333;
     --primary-color:#fa5430;
+    --border-color:#dbdbdb;
 }
 *{
     box-sizing: inherit;
@@ -52,10 +53,23 @@ html{
     background-color: rgba(0, 0, 0, 0.4);
 }
 .modal__body{
-    width: 300px;
-    height: 300px;
+    width: 500px;
     background-color: var(--white-color);
     margin: auto;
     z-index: 1;
     border-radius: 5px;
+}
+/* Button Style  */
+.btn{
+    min-width: 142px;
+    height: 36px;
+    text-decoration: none;
+    border:none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0;
+}
+.btn.btn--primary{
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
