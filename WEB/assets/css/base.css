@@ -45,6 +45,7 @@ html{
     bottom: 0;
     left: 0;
     display: flex;
+    
 }
 .modal__overlay{
     position: absolute;
@@ -54,22 +55,39 @@ html{
 }
 .modal__body{
     width: 500px;
-    background-color: var(--white-color);
     margin: auto;
     z-index: 1;
-    border-radius: 5px;
 }
 /* Button Style  */
 .btn{
     min-width: 142px;
-    height: 36px;
+    height: 34px;
     text-decoration: none;
     border:none;
     border-radius: 2px;
     font-size: 1.5rem;
     padding: 0;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: transparent;
+  
+}
+.btn.btn--normal:hover{
+    background-color: rgba(0, 0, 0, 0.05);
 }
 .btn.btn--primary{
     background-color: var(--primary-color);
     color: var(--white-color);
+    
+}
+.btn.btn--size-s{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 5px;
 }
