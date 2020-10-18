@@ -11,18 +11,93 @@
     list-style: none;
     padding-left: 0px;
     margin: 4px 0 0 0;
+    display: flex;
 }
 .header__navbar-item{
     margin: 0 8px;
     position: relative;
+    min-height: 26px;
+}
+.header__navbar-user{
+    display: flex;
+    justify-items: center;
+    position: relative;
+}
+.header__navbar-user::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 90px;
+    height: 15px;
+    right: 0px;
+    top: 15px;
+}
+.header__navbar-user:hover .header__navbar-user-menu{
+    display: block;
+}
+.header__navbar-user-img{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1)
+}
+.header__navbar-user-name{
+    margin-left: 4px;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.header__navbar-user-menu{
+    position: absolute;
+    z-index: 1;
+    padding: 0;
+    top: calc(100% + 4px);
+    right: 0;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    width: 160px;
+    list-style: none;
+    box-shadow: 0 1px 2px #e0e0e0;
+    display: none;
+}
+.header__navbar-user-menu::before{
+    content: "";
+    position: absolute;
+    display: block;
+    border-width: 15px 15px;
+    border-style: solid;
+    right: 15px;
+    top: -25px;
+    border-color: transparent transparent var(--white-color) transparent;
+}
+.header__navbar-user-item.header__navbar-user-item--separate{
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+.header__navbar-user-item a{
+    display: block;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 4px 16px;
+}
+.header__navbar-user-item a:first-child{
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.header__navbar-user-item a:last-child{
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.header__navbar-user-item a:hover{
+    background-color: #fafafa;
 }
 .header__navbar-item,
 .header__navbar-item-link{
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
+    z-index: 1;
 }
 .header__navbar-item--strong{
     font-weight: 400;
@@ -35,7 +110,7 @@
     height: 12px;
     background-color: #fa8e82;
     right: -10px;
-    top: 0px;
+    top: 4px;
 }
 .header__navbar-item:hover,
 .header__navbar-item-link:hover{
@@ -45,6 +120,9 @@
 .header__navbar-icon-link{
     color:var(--white-color);
     text-decoration: none;
+}
+.header__navbar-icon-link:nth-child(2){
+    margin-left: 3px;
 }
 .header__navbar-icon{
     font-size: 1.8rem;
@@ -71,6 +149,7 @@
     border-radius: 2px;
     display: none;
     animation: fadeIn ease-in 1s;
+    z-index: 1;
 }
 .header__qr::before{
     content: "";
@@ -111,12 +190,13 @@
     width: 404px;
     background-color: var(--white-color);
     right: 0px;
-    border: 0.5px solid gray;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
     cursor: default;
-    transform-origin: calc(100% - 20px) top  ;
+    transform-origin: calc(100% - 32px) top  ;
     animation: headerNotifyGrowth ease-in 0.1s;
     display: none;
     will-change: opcaity, transform;
+    border-radius: 2px;
 }
 .header__notify::before{
     content: "";
@@ -329,6 +409,10 @@
 .header__logo{
     width:200px; 
 }
+.header__logo-link{
+    text-decoration: none;
+    color: transparent;
+}
 .header__logo-img{
     width: 150px;
 }
@@ -451,7 +535,7 @@
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
     animation: fadeIn ease-in 0.2s;
     cursor: default;
-    /* display: none; */
+    display: none;
 }
 
 .header__cart-wrap:hover .header__cart-list{
@@ -502,6 +586,7 @@
     color: var(--text-color);
     padding: 0 16px;
     border-radius: 3px;
+    z-index: 0;
 }
 .header__search-select{
     display: block;
@@ -546,7 +631,7 @@
 .header__search-option{
     position: absolute;
     right: 0;
-    top: 140%;
+    top: calc(140% - 2px);
     width: 135px;
     list-style: none;
     box-shadow: 0 1px 2px #cccccc;
@@ -595,7 +680,7 @@
     display: inline-block;
 }
 /* History of search  */
-.header__search-input:focus~ .header__search-history{
+.header__search-input:focus ~ .header__search-history{
     display: block;
 }
 .header__search-history{
