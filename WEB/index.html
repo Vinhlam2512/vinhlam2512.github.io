@@ -21,7 +21,7 @@
                         <li class="header__navbar-item header__navbar-item--showqr header__navbar-item--separate">
                             Tải ứng dụng
                             <div class="header__qr">
-                                <img src="/assets/img/f184c0b68a2d385feb5d70a76396230b.png" alt="QR code " class="header__qr-img">
+                                <img src="/assets/img/qr code.png" alt="QR code " class="header__qr-img">
                                 <div class="header__qr-app">
                                     <a href="https://play.google.com/store/apps/details?id=com.shopee.vn&referrer=af_tranid%3Drsx9V4J79OX3NH5LwyqLcw%26pid%3DOrganicA%26c%3Dlp_home_and1" class="header__qr-link">
                                         <img src="/assets/img/gg play.png" alt="Google Play" class="header__qr-dow">
@@ -112,7 +112,25 @@
                         
                     </div>  
                     <div class="header__search">
-                        <input type="text" class="header__search-input" placeholder="Nhập Để Tìm Kiếm Sản Phẩm">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập Để Tìm Kiếm Sản Phẩm">
+
+                            <!-- History of search  -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch Sử Tìm Kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Iphone 10</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Iphone 11</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Iphone 12</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="header__search-select">
                             <span class="header__search-select-label">Trong Shop</span>
                             <i class="header__search-select-icon fas fa-chevron-down"></i>
@@ -131,8 +149,86 @@
                              <i class="header__search-btn-icon fas fa-search"></i> 
                         </button>
                     </div>
+                    <!-- Cart layout  -->
                     <div class="header__cart">
-                        <i class="header__cart-icon fas fa-shopping-cart"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <span class="header__cart-notice">3</span>
+                            <!-- No cart: header__cart-list-no-cart  -->
+                            <div class="header__cart-list ">
+                                <img src="./assets/img/no cart.png" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-list-no-cart-msg">
+                                    Chưa Có Sản Phẩm
+                                </span>
+
+                                <h4 class="header__cart-heading">Sản Phẩm Đã Thêm</h4>
+                                <ul class="header__cart-list-item" >
+                                    <!-- Cart-item  -->
+                                    <li class="header__cart-item">
+                                        <img src="https://cf.shopee.vn/file/b70b6a993ab600672d18fafceb043352" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Tai nghe Samsung Galaxy Buds+ </h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">2.590.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loại hàng: Bạc
+                                                </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img src="https://cf.shopee.vn/file/2c88f546ea9c0cadca257b1fe9f058af" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name"> Điện Thoại Samsung Note 20 </h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">29.990.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loại hàng: Đồng
+                                                </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img src="https://cf.shopee.vn/file/0431f3ccfe6a4c9dfce63f66709bac99" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Điện Thoại Samsung Galaxy A71</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">7.990.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loại hàng: Vàng
+                                                </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+
+                                <button class="header__cart-view-cart btn btn--primary">Xem Giỏ Hàng</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

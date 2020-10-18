@@ -74,7 +74,7 @@ html{
 }
 /* Button Style  */
 .btn{
-    min-width: 142px;
+    min-width: 124px;
     height: 34px;
     text-decoration: none;
     border:none;
@@ -93,7 +93,6 @@ html{
 .btn.btn--primary{
     background-color: var(--primary-color);
     color: var(--white-color);
-    
 }
 .btn.btn--size-s{
     display: flex;
