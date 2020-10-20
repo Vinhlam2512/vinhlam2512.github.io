@@ -12,9 +12,9 @@
 </head>
 
 <body>
-    <div class="main">
+    <div class="app">
         <header class="header">
-            <div class="gird">
+            <div class="grid">
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item--separate">Kênh Người Bán</li>
@@ -256,10 +256,43 @@
                 </div>
             </div>
         </header>
-        <div class="container">
-
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fas fa-list"></i>
+                                Danh Mục
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">Trang Điểm Mặt</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Trang Điểm Môi</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Trang Điểm Mắt</a>
+                                </li>
+                                
+                            </ul>
+                        </nav>
+                    </div>
+    
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp Xếp Theo</span>
+                            <button class="btn">Phổ Biến</button>
+                            <button class="btn">Mới Nhất</button>
+                            <button class="btn">Bán Chạy</button>
+                        </div>
+                    </div>
+                </div>
+           </div>
 
         </div>
+
         <footer class="footer">
 
         </footer>
