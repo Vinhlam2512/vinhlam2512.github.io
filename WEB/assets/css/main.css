@@ -848,6 +848,7 @@
 .home-product-item{
     margin-top: 10px;
     background-color: var(--white-color);
+    position: relative;
 }
 .home-product-item__img{
     padding-top: 100%;
@@ -894,7 +895,7 @@
     margin: 5px 10px 0 10px;
 }
 .home-product-item__like{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 i.home-product-item__like-icon-fill{
     color: #f63d30;
@@ -907,27 +908,93 @@ i.home-product-item__like-icon-fill{
     display: none;
 }
 .home-product-item__rate{
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     color: #d5d5d5;
+    margin-top: 2px;
+    /* margin kịch về left  */
+    margin-left: auto;
+}
+.home-product-item__star--gold{
+    color: var(--star-gold-color);
+}
+.home-product-item__sold{
+    font-size: var(--text-color);
+    margin-left: 6px;
 }
 .home-product-item__origin{
-
+    display: flex;
+    margin: 3px 10px 0 10px;
+    justify-content: space-between;
+    color: #595959;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 .home-product-item__brand{
 
 }
 .home-product-item__origin-title{
-
+    
 }
 .home-product-item__favourite{
-
+    /* current color set background-color theo color  */
+    background-color: currentColor;
+    position: absolute;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    top: 5%;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    left: -4px;
+    font-weight: 500;
+    line-height: 1.6rem;
+    padding-right: 4px;
+}
+.home-product-item__favourite::after{
+    content: "";
+    display: block;
+    /* set color theo thằng cha  */
+    border-top: 3px solid currentColor ;
+    border-left: 3px solid transparent;
+    position: absolute;
+    bottom: -3px;
+    left: 0; 
+    /* chỉnh độ sáng  */
+    filter: brightness(60%);
+}
+.home-product-item__favourite i{
+    font-size: 0.9rem;
+    margin: 0 2px 0 5px;
+    color: var(--white-color);
+}
+.home-product-item__favourite span{
+    color: var(--white-color);
 }
 .home-product-item__sale-off{
-
+    position: absolute;
+    width: 40px;
+    height: 36px;
+    background-color: rgb(248, 213, 48, .94);
+    right: 0;
+    top: 0;
+    text-align: center;
+    
+    font-weight: 700;
+}
+.home-product-item__sale-off::after{
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 0 20px 4px;
+    color: rgb(248, 213, 48, .94);
+    border-color: transparent currentColor transparent currentColor;
+    bottom: -4px;
+    right: 0;
 }
 .home-product-item__sale-off-percent{
-
+    color: #EE4D2D;
+    font-size: 1.3rem;
 }
 .home-product-item__sale-off-label{
-
+    color: var(--white-color);
+    font-size: 1.4rem;
 }
