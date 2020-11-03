@@ -18,20 +18,13 @@ html{
      font-size: 62.5%; 
      line-height: 1.9rem;
      font-family: 'Roboto', sans-serif;
+     box-sizing: border-box;
 }
 /* Responsive */
-.grid{
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
 
-.grid__full-wdith{
-    width: 100%;
-}
 .grid__row {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     margin-left: -5px;
     margin-right: -5px;
 }
@@ -45,12 +38,14 @@ html{
 .grid__column-2-4{
     padding-left: 5px;
     padding-right: 5px;
-    width: 16.6667%;
+    width: 20%;
+    
 }
 .grid__column-10{
     padding-left: 5px;
     padding-right: 5px;
     width: 83.3334%;
+    
 }
 /* animation */
 @keyframes fadeIn{
@@ -101,7 +96,7 @@ html{
     border:none;
     border-radius: 2px;
     font-size: 1.5rem;
-    padding: 0;
+    padding: 0 12px;
     outline: none;
     cursor: pointer;
     color: var(--text-color);
@@ -180,4 +175,33 @@ html{
 }
 .select-input__link:hover{
     color: var(--primary-color);
+}
+.pagination{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+.pagination-item--active .pagination-item__link{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.pagination-item--active .pagination-item__link:hover{
+    background-color: #f36a4c;
+}
+.pagination-item{
+    margin: 0 12px;
+}
+.pagination-item__link{
+    --height: 30px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    display: block;
+    line-height: var(--height);
+    text-align: center;
+    border-radius: 2px;
+    font-weight: 300;
 }

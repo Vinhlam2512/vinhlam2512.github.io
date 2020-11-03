@@ -1,0 +1,45 @@
+.grid{
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+.row{
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+.grid.wide{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* TABLET --> PC LOW RESOLUTION */
+@media (min-width: 740px) and (max-width: 1023px){
+    .wide{
+        width: 664px;
+    }
+}
+/* LỚN HƠN TABLET */
+@media (min-width: 740px){
+    .row{
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+}
+/* PC LOW RESOLUTION  */
+@media (min-width: 1113px){
+    .row{
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+}
+/* LỚN HƠN PC LOW RESOLUITON */
+@media (min-width: 1024px) and (max-width: 1239px){
+    .wide{
+        width: 984px;
+    }
+    .wide .row{
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+}
