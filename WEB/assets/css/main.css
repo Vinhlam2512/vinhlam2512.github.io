@@ -441,7 +441,7 @@
     padding-left: 0;
     list-style: none;
     /* vh là Các Viewport Units đại diện cho một tỉ lệ % của khung nhìn (viewport) của trình duyệt hiện tại.  */
-    height: 50vh;
+    max-height: 50vh;
     overflow-y: auto;
 }
 .header__cart-item{
