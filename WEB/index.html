@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="assets/css/grid.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.14.0-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-pro-5.13.0-web/fontawesome-pro-5.13.0-web/css/all.min.css">
 </head>
 
 <body>
@@ -124,8 +124,11 @@
 
                 <!-- header with search  -->
                 <div class="header-with-search">
-                    <div class="header__logo hide-on-mobile-tablet">
-                        
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="fal fa-search search-icon"></i>
+                    </label>
+                    <input type="checkbox" id="mobile-search-checkbox" class="mobile-search-input">
+                    <div class="header__logo ">
                         <a href="/" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-img">
                                 <g fill-rule="evenodd">
@@ -136,7 +139,7 @@
                         </a>
                         
                     </div>  
-                    <div class="header__search hide-on-mobile">
+                    <label for="mobile-search-checkbox" class="header__search" >
                         <div class="header__search-input-wrap">
                             <input type="text" class="header__search-input" placeholder="Nhập Để Tìm Kiếm Sản Phẩm">
 
@@ -173,14 +176,12 @@
                         <button class="header__search-btn">
                              <i class="header__search-btn-icon fas fa-search"></i> 
                         </button>
-                    </div>
+                    </label>
 
                     <!-- Nav Mobile  -->
-                    <div  class="nav__bars-icon ">
-                        <a href="" class="nav__bars-btn">
-                            <label for="nav-mobile-input" class="fas fa-bars"></label>
-                        </a>
-                    </div>
+                    <label for="nav-mobile-input"  class="nav__bars-btn">
+                        <i class="fal fa-bars nav__bars-icon"></i>
+                    </label>
                     <input type="checkbox" name=" " id="nav-mobile-input" class="nav__input">
                     <label for="nav-mobile-input" class="nav__bars-overlay"></label>
                     <nav class="nav__mobile">
