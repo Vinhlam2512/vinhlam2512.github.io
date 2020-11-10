@@ -125,9 +125,9 @@
                 <!-- header with search  -->
                 <div class="header-with-search">
                     <label for="mobile-search-checkbox" class="header__mobile-search">
-                        <i class="fal fa-search search-icon"></i>
+                        <i class="fal fa-search header__mobile-search-icon"></i>
                     </label>
-                    <input type="checkbox" id="mobile-search-checkbox" class="mobile-search-input">
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
                     <div class="header__logo ">
                         <a href="/" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-img">
@@ -179,69 +179,7 @@
                     </label>
 
                     <!-- Nav Mobile  -->
-                    <label for="nav-mobile-input"  class="nav__bars-btn">
-                        <i class="fal fa-bars nav__bars-icon"></i>
-                    </label>
-                    <input type="checkbox" name=" " id="nav-mobile-input" class="nav__input">
-                    <label for="nav-mobile-input" class="nav__bars-overlay"></label>
-                    <nav class="nav__mobile">
-                        <ul class="nav__mobile-list">
-                            <li class="nav__mobile-header">
-                                Tất Cả Sản Phẩm
-                            </li>
-                            <li>
-                                <a href="" class="nav__mobile-link">Iphone</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav__mobile-link">Ipad</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav__mobile-link">Sam Sung</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav__mobile-link">Xiaomi</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav__mobile-link">RealMe</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav__mobile-link">RealMe</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav__mobile-link">RealMe</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav__mobile-link">RealMe</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav__mobile-link">RealMe</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav__mobile-link">RealMe</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav__mobile-link">RealMe</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav__mobile-link">RealMe</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav__mobile-link">RealMe</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav__mobile-link">RealMe</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav__mobile-link">RealMe</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav__mobile-link">RealMe</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav__mobile-link">Oppo</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    
                     <!-- Cart layout  -->
                     <div class="header__cart">
                         <div class="header__cart-wrap">
@@ -444,8 +382,8 @@
         </header>
         <div class="app__container">
             <div class="grid wide">
-                <div class="grid__row app__content">
-                    <div class="grid__column-2">
+                <div class="row sm-gutter app__content">
+                    <div class="col l-2 m-0 c-0">
                         <nav class="category">
                             <h3 class="category__heading">
                                 <i class="category__heading-icon fas fa-list"></i>
@@ -466,7 +404,7 @@
                         </nav>
                     </div>
     
-                    <div class="grid__column-10">
+                    <div class="col l-10 m-12 c-12">
                         <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter__label">Sắp Xếp Theo</span>
                             <button class="home-filter__btn btn">Phổ Biến</button>
@@ -507,10 +445,49 @@
                             </div>
                         </div>
 
+                        <nav class="mobile-category">
+                            <ul class="mobile-category__list">
+                                <li class="mobile-category_item">
+                                    <a href="" class="mobile-category__link">Dụng Cụ & Thiết Bị Tiện Ích</a>
+                                </li>
+                                <li class="mobile-category_item">
+                                    <a href="" class="mobile-category__link">Dụng Cụ & Thiết Bị Tiện Ích</a>
+                                </li>
+                                <li class="mobile-category_item">
+                                    <a href="" class="mobile-category__link">Dụng Cụ & Thiết Bị Tiện Ích</a>
+                                </li>
+                                <li class="mobile-category_item">
+                                    <a href="" class="mobile-category__link">Dụng Cụ & Thiết Bị Tiện Ích</a>
+                                </li>
+                                <li class="mobile-category_item">
+                                    <a href="" class="mobile-category__link">Dụng Cụ & Thiết Bị Tiện Ích</a>
+                                </li>
+                                <li class="mobile-category_item">
+                                    <a href="" class="mobile-category__link">Dụng Cụ & Thiết Bị Tiện Ích</a>
+                                </li>
+                                <li class="mobile-category_item">
+                                    <a href="" class="mobile-category__link">Dụng Cụ & Thiết Bị Tiện Ích</a>
+                                </li>
+                                <li class="mobile-category_item">
+                                    <a href="" class="mobile-category__link">Dụng Cụ & Thiết Bị Tiện Ích</a>
+                                </li>
+                                <li class="mobile-category_item">
+                                    <a href="" class="mobile-category__link">Dụng Cụ & Thiết Bị Tiện Ích</a>
+                                </li>
+                                <li class="mobile-category_item">
+                                    <a href="" class="mobile-category__link">Dụng Cụ & Thiết Bị Tiện Ích</a>
+                                </li>
+                                <li class="mobile-category_item">
+                                    <a href="" class="mobile-category__link">Dụng Cụ & Thiết Bị Tiện Ích</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+
                         <div class="home-product">
-                            <div class="grid__row ">
+                            <div class="row sm-gutter">
                                 <!-- Product-item  -->
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/aa4e464c98e7cce577030017d542241b_tn);"></div>
                                         <h4 class="home-product-item__name">Điện thoại Apple iPhone 11 Pro VN/A (4GB/64GB-256GB-512G) (Chưa kích hoạt) - Hàng chính hãng - Bảo hành 12 Tháng 1 đổi 1</h4>
@@ -546,8 +523,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <!-- Product-item  -->
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/4c4b412ac1c7af3153fcb07e652b3a32);"></div>
                                         <h4 class="home-product-item__name">Điện thoại Apple iPhone 7 128GB - Hàng Chính Hãng VN/A</h4>
@@ -583,8 +559,7 @@
                                         </div>
                                     </a>   
                                 </div>
-                                <!-- Product-item  -->
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://fptshop.com.vn/Uploads/Originals/2017/11/10/636459041871679213_1.jpg);"></div>
                                         <h4 class="home-product-item__name">IPhone 8 Plus 64GB</h4>
@@ -620,8 +595,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <!-- Product-item  -->
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/853b0e2c44b0f920b4866971b36f7882);"></div>
                                         <h4 class="home-product-item__name">IPhone 6s Plus 32GB </h4>
@@ -657,8 +631,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <!-- Product-item  -->
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/29b0f31dfcddb569bd28320c9335ccd2);"></div>
                                         <h4 class="home-product-item__name">Điện Thoại Apple iPhone 11 128GB LL/A - Hàng Nhập Khẩu Chính Hãng</h4>
@@ -694,7 +667,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/29b0f31dfcddb569bd28320c9335ccd2);"></div>
                                         <h4 class="home-product-item__name">Điện Thoại Apple iPhone 11 128GB LL/A - Hàng Nhập Khẩu Chính Hãng</h4>
@@ -730,7 +703,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/29b0f31dfcddb569bd28320c9335ccd2);"></div>
                                         <h4 class="home-product-item__name">Điện Thoại Apple iPhone 11 128GB LL/A - Hàng Nhập Khẩu Chính Hãng</h4>
@@ -766,7 +739,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/29b0f31dfcddb569bd28320c9335ccd2);"></div>
                                         <h4 class="home-product-item__name">Điện Thoại Apple iPhone 11 128GB LL/A - Hàng Nhập Khẩu Chính Hãng</h4>
@@ -802,7 +775,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/29b0f31dfcddb569bd28320c9335ccd2);"></div>
                                         <h4 class="home-product-item__name">Điện Thoại Apple iPhone 11 128GB LL/A - Hàng Nhập Khẩu Chính Hãng</h4>
@@ -838,7 +811,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/29b0f31dfcddb569bd28320c9335ccd2);"></div>
                                         <h4 class="home-product-item__name">Điện Thoại Apple iPhone 11 128GB LL/A - Hàng Nhập Khẩu Chính Hãng</h4>
@@ -874,7 +847,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/29b0f31dfcddb569bd28320c9335ccd2);"></div>
                                         <h4 class="home-product-item__name">Điện Thoại Apple iPhone 11 128GB LL/A - Hàng Nhập Khẩu Chính Hãng</h4>
@@ -910,7 +883,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/29b0f31dfcddb569bd28320c9335ccd2);"></div>
                                         <h4 class="home-product-item__name">Điện Thoại Apple iPhone 11 128GB LL/A - Hàng Nhập Khẩu Chính Hãng</h4>
@@ -946,7 +919,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/29b0f31dfcddb569bd28320c9335ccd2);"></div>
                                         <h4 class="home-product-item__name">Điện Thoại Apple iPhone 11 128GB LL/A - Hàng Nhập Khẩu Chính Hãng</h4>
@@ -982,7 +955,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/29b0f31dfcddb569bd28320c9335ccd2);"></div>
                                         <h4 class="home-product-item__name">Điện Thoại Apple iPhone 11 128GB LL/A - Hàng Nhập Khẩu Chính Hãng</h4>
@@ -1018,7 +991,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/29b0f31dfcddb569bd28320c9335ccd2);"></div>
                                         <h4 class="home-product-item__name">Điện Thoại Apple iPhone 11 128GB LL/A - Hàng Nhập Khẩu Chính Hãng</h4>
@@ -1100,8 +1073,8 @@
 
         <footer class="footer">
             <div class="grid wide">
-                <div class="grid__row">
-                    <div class="grid__column-2-4">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1115,7 +1088,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Giới thiệu</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1129,7 +1102,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Danh mục</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1143,7 +1116,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Theo dõi chúng tôi</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1166,7 +1139,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
                         <div class="footer__download"> 
                             <img src="/assets/img/qr code.png" alt="Download QR" class="footer__download-qr">

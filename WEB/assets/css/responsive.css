@@ -75,6 +75,17 @@
         width: 100%;
         box-shadow: 0 1px;
     }
+    .pagination-item{
+        margin: 0;
+    }
+    .pagination-item__link{
+         --height:28px;
+         font-size: 1.6rem;
+         min-width: 36px;
+     }
+     .app_content{
+         margin: 0 4px;
+     }
     @keyframes mobileSearchSideIn {
         from{
             opacity: 0;
