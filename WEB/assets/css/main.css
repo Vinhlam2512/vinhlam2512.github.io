@@ -427,6 +427,7 @@
 }
 .header__search-checkbox{
     display: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__mobile-search{
