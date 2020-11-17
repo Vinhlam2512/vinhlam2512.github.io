@@ -413,6 +413,7 @@
     height: 25px;
     color: var(--white-color);
     padding: 0 12px;
+    display: none;
 }
 .header__search-checkbox:checked ~ .header__search{
     display: flex;
@@ -425,10 +426,7 @@
     position: relative;
     
 }
-.header__search-checkbox{
-    display: none;
-    -webkit-tap-highlight-color: transparent;
-}
+
 
 .header__mobile-search{
 
@@ -883,6 +881,7 @@
     /* Thuộc tính transition khi di vào phần được hover sẽ chuyển động */
     right: 0;
     transition: right linear 0.1s ;
+    
 }
 .category-item__link:hover{
     right: -4px;
@@ -890,7 +889,7 @@
 }
 /* Mobile category  */
 .mobile-category{
-
+    display: none;
 }
 .mobile-category__list{
     display: flex;
@@ -933,6 +932,7 @@
     -webkit-line-clamp: 2;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
+    padding: 0 6px;
 }
 /* Home sort + filter */
 .home-filter{
